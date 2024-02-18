@@ -21,3 +21,5 @@ figures/ch09_bike_overall_metrics.pdf
 figures/ch09_bike_overall_predictions.pdf
 sae_tree.dot
 sae_tree.png
+figures/ch09_friedman_1_000_000_metrics.pdf
+figures/ch09_friedman_1_000_000_predictions.pdf
