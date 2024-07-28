@@ -9,3 +9,4 @@ runs/*
 spotPython.build.kriging.log
 spotPython.spot.spot.log
 spotRiver.fun.hyperriver.log
+.DS_Store
