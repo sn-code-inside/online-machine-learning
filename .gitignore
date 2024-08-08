@@ -13,3 +13,10 @@ spotRiver.fun.hyperriver.log
 runs_OLD/
 spot_024_experiment.pickle
 ch10_friedman-hpt_correct.ipynb
+gui/runs/
+gui/spotPython.fun.hyperlight.log
+gui/spotPython.fun.hypersklearn.log
+gui/userModel/__pycache__/netlightregression.cpython-311.pyc
+gui/userPrepModel/__pycache__/riverBikeHourly.cpython-311.pyc
+gui/userPrepModel/__pycache__/riverBikeSharing.cpython-311.pyc
+gui/userPrepModel/__pycache__/riverStandardScaler.cpython-311.pyc

@@ -1,0 +1,97 @@
+{
+    "netlightregression": {
+        "l1": {
+            "type": "int",
+            "default": 3,
+            "transform": "transform_power_2_int",
+            "lower": 2,
+            "upper": 5
+        },
+        "epochs": {
+            "type": "int",
+            "default": 4,
+            "transform": "transform_power_2_int",
+            "lower": 4,
+            "upper": 9
+        },
+        "batch_size": {
+            "type": "int",
+            "default": 4,
+            "transform": "transform_power_2_int",
+            "lower": 1,
+            "upper": 4
+        },
+        "act_fn": {
+            "levels": [
+                "Sigmoid",
+                "Tanh",
+                "ReLU",
+                "LeakyReLU",
+                "ELU",
+                "Swish"
+            ],
+            "type": "factor",
+            "default": "ReLU",
+            "transform": "None",
+            "class_name": "spotPython.torch.activation",
+            "core_model_parameter_type": "instance()",
+            "lower": 0,
+            "upper": 5
+        },
+        "optimizer": {
+            "levels": [
+                "Adadelta",
+                "Adagrad",
+                "Adam",
+                "AdamW",
+                "SparseAdam",
+                "Adamax",
+                "ASGD",
+                "NAdam",
+                "RAdam",
+                "RMSprop",
+                "Rprop",
+                "SGD"
+            ],
+            "type": "factor",
+            "default": "SGD",
+            "transform": "None",
+            "class_name": "torch.optim",
+            "core_model_parameter_type": "str",
+            "lower": 0,
+            "upper": 11
+        },
+        "dropout_prob": {
+            "type": "float",
+            "default": 0.01,
+            "transform": "None",
+            "lower": 0.0,
+            "upper": 0.25
+        },
+        "lr_mult": {
+            "type": "float",
+            "default": 1.0,
+            "transform": "None",
+            "lower": 0.1,
+            "upper": 10.0
+        },
+        "patience": {
+            "type": "int",
+            "default": 2,
+            "transform": "transform_power_2_int",
+            "lower": 2,
+            "upper": 6
+        },
+        "initialization": {
+            "levels": [
+                "Default"
+            ],
+            "type": "factor",
+            "default": "Default",
+            "transform": "None",
+            "core_model_parameter_type": "str",
+            "lower": 0,
+            "upper": 0
+        }
+    }
+}
