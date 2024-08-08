@@ -20,3 +20,4 @@ gui/userModel/__pycache__/netlightregression.cpython-311.pyc
 gui/userPrepModel/__pycache__/riverBikeHourly.cpython-311.pyc
 gui/userPrepModel/__pycache__/riverBikeSharing.cpython-311.pyc
 gui/userPrepModel/__pycache__/riverStandardScaler.cpython-311.pyc
+gui/plot.png

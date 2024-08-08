@@ -347,6 +347,9 @@ class spotPythonApp(CTkApp):
         self.max_surrogate_points = int(self.max_sp_var.get())
         self.TENSORBOARD_CLEAN = map_to_True_False(self.tb_clean_var.get())
         self.tensorboard_start = map_to_True_False(self.tb_start_var.get())
+        # if TENSOBOARD_START is True, set SUMMARY_WRITER to True, because
+        # the tensorboard needs a summary writer
+        self.SUMMARY_WRITER = map_to_True_False(self.tb_start_var.get())
         self.tensorboard_stop = map_to_True_False(self.tb_stop_var.get())
         self.PREFIX = self.experiment_name_entry.get()
         self.data_set_name = self.select_data_frame.get_selected_optionmenu_item()
@@ -441,6 +444,7 @@ class spotPythonApp(CTkApp):
             _torchmetric=None,
             PREFIX=self.PREFIX,
             TENSORBOARD_CLEAN=self.TENSORBOARD_CLEAN,
+            SUMMARY_WRITER=self.SUMMARY_WRITER,
             core_model_name=core_model_name,
             data_set_name=self.data_set_name,
             data_set=self.data_set,
@@ -469,6 +473,8 @@ class spotPythonApp(CTkApp):
             task=task_name,
             target_column=self.target_column,
             target_type=self.target_type,
+            tensorboard_start=self.tensorboard_start,
+            tensorboard_stop=self.tensorboard_stop,
             test=self.test,
             test_size=self.test_size,
             train=self.train,
