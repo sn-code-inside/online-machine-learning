@@ -11,11 +11,11 @@ from torch.utils.data import DataLoader
 import pandas as pd
 
 from spotPython.utils.init import fun_control_init, design_control_init, surrogate_control_init, optimizer_control_init
-from spotGUI.ctk.CTk import CTkApp, SelectOptionMenuFrame
+from spotgui.ctk.CTk import CTkApp, SelectOptionMenuFrame
 from spotRiver.hyperdict.river_hyper_dict import RiverHyperDict
 from spotPython.hyperdict.light_hyper_dict import LightHyperDict
 from spotPython.hyperdict.sklearn_hyper_dict import SklearnHyperDict
-from spotGUI.tuner.spotRun import (
+from spotgui.tuner.spotRun import (
     save_spot_python_experiment,
     run_spot_python_experiment,
     get_n_total,

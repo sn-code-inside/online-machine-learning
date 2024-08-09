@@ -1,10 +1,9 @@
 import argparse
-import pickle
 from spotPython.utils.file import load_and_run_spot_python_experiment
 
 
 def main(pickle_file):
-    spot_tuner = load_and_run_spot_python_experiment(pickle_file)
+    spot_tuner, fun_control, design_control, surrogate_control, optimizer_control, p_open = load_and_run_spot_python_experiment(pickle_file)
 
 
 if __name__ == "__main__":
