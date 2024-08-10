@@ -22,3 +22,5 @@ gui/userPrepModel/__pycache__/riverBikeSharing.cpython-311.pyc
 gui/userPrepModel/__pycache__/riverStandardScaler.cpython-311.pyc
 gui/plot.png
 gui/userExperiment/progress.txt
+gui/userExperiment/figures/amf_10000_no_tb_metrics.pdf
+gui/userExperiment/figures/amf_10000_no_tb_predictions.pdf
