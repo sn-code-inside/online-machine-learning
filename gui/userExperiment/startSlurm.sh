@@ -19,6 +19,6 @@ SPOT_PKL=$1
 
 module load conda
 
-conda activate spotCondaEnv
+conda activate spot
 
 python startPython.py "$SPOT_PKL"
