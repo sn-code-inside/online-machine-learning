@@ -1,5 +1,5 @@
-from spotPython.data.csvdataset import CSVDataset as spotPythonCSVDataset
-from spotPython.data.pkldataset import PKLDataset as spotPythonPKLDataset
+from spotpython.data.csvdataset import CSVDataset as spotPythonCSVDataset
+from spotpython.data.pkldataset import PKLDataset as spotPythonPKLDataset
 import tkinter as tk
 import customtkinter
 import pprint
@@ -10,11 +10,11 @@ import copy
 from torch.utils.data import DataLoader
 import pandas as pd
 
-from spotPython.utils.init import fun_control_init, design_control_init, surrogate_control_init, optimizer_control_init
+from spotpython.utils.init import fun_control_init, design_control_init, surrogate_control_init, optimizer_control_init
 from spotgui.ctk.CTk import CTkApp, SelectOptionMenuFrame
-from spotRiver.hyperdict.river_hyper_dict import RiverHyperDict
-from spotPython.hyperdict.light_hyper_dict import LightHyperDict
-from spotPython.hyperdict.sklearn_hyper_dict import SklearnHyperDict
+from spotriver.hyperdict.river_hyper_dict import RiverHyperDict
+from spotpython.hyperdict.light_hyper_dict import LightHyperDict
+from spotpython.hyperdict.sklearn_hyper_dict import SklearnHyperDict
 from spotgui.tuner.spotRun import (
     save_spot_python_experiment,
     run_spot_python_experiment,
@@ -26,27 +26,27 @@ from spotgui.tuner.spotRun import (
     get_kriging_noise,
     get_scenario_dict,
 )
-from spotRiver.data.selector import get_river_dataset_from_name
-from spotPython.utils.convert import map_to_True_False, set_dataset_target_type, check_type
-from spotRiver.utils.data_conversion import split_df
-from spotPython.hyperparameters.values import (
+from spotriver.data.selector import get_river_dataset_from_name
+from spotpython.utils.convert import map_to_True_False, set_dataset_target_type, check_type
+from spotriver.utils.data_conversion import split_df
+from spotpython.hyperparameters.values import (
     add_core_model_to_fun_control,
     get_core_model_from_name,
     get_river_core_model_from_name,
     get_metric_sklearn,
     update_fun_control_with_hyper_num_cat_dicts,
 )
-from spotRiver.fun.hyperriver import HyperRiver
-from spotPython.fun.hyperlight import HyperLight
-from spotPython.fun.hypersklearn import HyperSklearn
-from spotPython.utils.metrics import get_metric_sign
-from spotPython.utils.scaler import TorchStandardScaler
+from spotriver.fun.hyperriver import HyperRiver
+from spotpython.fun.hyperlight import HyperLight
+from spotpython.fun.hypersklearn import HyperSklearn
+from spotpython.utils.metrics import get_metric_sign
+from spotpython.utils.scaler import TorchStandardScaler
 
 
 class spotPythonApp(CTkApp):
     def __init__(self):
         super().__init__()
-        self.title("spotPython GUI")
+        self.title("spotpython GUI")
         self.logo_text = "    SPOTPython"
 
         # self.scenario = "river"

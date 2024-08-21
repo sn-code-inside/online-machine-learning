@@ -33,7 +33,7 @@
             "type": "factor",
             "default": "ReLU",
             "transform": "None",
-            "class_name": "spotPython.torch.activation",
+            "class_name": "spotpython.torch.activation",
             "core_model_parameter_type": "instance()",
             "lower": 0,
             "upper": 5

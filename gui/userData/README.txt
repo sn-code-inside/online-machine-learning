@@ -14,8 +14,8 @@ It is available in the following formats:
 - csv: diabetes.csv
 - pkl: diabetes.pkl
 
-Furthermore, it is available in spotPython as a torch DataSet, see:
-https://sequential-parameter-optimization.github.io/spotPython/reference/spotPython/data/diabetes/
+Furthermore, it is available in spotpython as a torch DataSet, see:
+https://sequential-parameter-optimization.github.io/spotpython/reference/spotpython/data/diabetes/
 
 
 Moons data set:

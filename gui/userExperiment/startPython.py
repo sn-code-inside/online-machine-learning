@@ -1,5 +1,5 @@
 import argparse
-from spotPython.utils.file import load_and_run_spot_python_experiment
+from spotpython.utils.file import load_and_run_spot_python_experiment
 
 
 def main(pickle_file):
